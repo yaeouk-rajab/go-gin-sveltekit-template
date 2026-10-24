@@ -7,6 +7,14 @@ Everything domain-specific has been removed; what remains is the plumbing every
 project of this shape needs. Kubernetes, Terraform and Lambda examples are
 included as optional folders you can delete.
 
+## Screenshots
+
+![Login page](docs/screenshots/login.png)
+
+![Dashboard](docs/screenshots/dashboard.png)
+
+_These images are illustrative mockups rendered from this repository's documented screens and API shapes, not captures of a running build. Regenerate or replace them with real captures once the app is running._
+
 ## What is included
 
 Backend (`backend/`)
