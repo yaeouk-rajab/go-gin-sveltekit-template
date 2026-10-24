@@ -44,7 +44,7 @@ Frontend (`frontend/`)
   `Button` (loading state), `FormField` (label, hint, field errors,
   `aria-describedby`), `Alert`, `Spinner`, `EmptyState`, `Modal` (focus,
   Escape, backdrop), `Pagination` (windowed page links), `DataTable` (typed
-  columns, empty and loading states). Import them from `$lib/components`.
+  columns, empty and loading states). Import them from `#lib/components`.
 - Root layout with skip link and design tokens (`src/app.css`, light and
   dark), and an error page (`+error.svelte`).
 - Vitest with Testing Library, ESLint 10 + Prettier, `svelte-check`.
@@ -126,7 +126,7 @@ BACKEND_URL=http://localhost:8080 npm run dev
 3. Add every gated route to the table in
    `operatorapi/middleware_test.go` so it is proven to reject anonymous calls.
 4. In the frontend, fetch from `+page.server.ts` with `backendFetch`, and build
-   pages from `$lib/components`.
+   pages from `#lib/components`.
 
 ## Security notes
 

@@ -1,9 +1,7 @@
-import { env } from '$env/dynamic/private';
-
-// Server-side URL of the backend API. Every backend call is made from
-// +page.server.ts load functions, form actions and +server.ts routes, never
+// BACKEND_URL (declared in src/env.ts) is the server-side URL of the backend API. Every backend
+// call is made from +page.server.ts load functions, form actions and +server.ts routes, never
 // from code that runs in the browser, so this value never reaches the client.
-const BACKEND_URL = env.BACKEND_URL ?? 'http://localhost:8080';
+import { BACKEND_URL } from '$app/env/private';
 
 // Must equal operatorauth.SessionCookieName in the Go backend
 // (backend/internal/operatorauth/session.go). This frontend never mints or

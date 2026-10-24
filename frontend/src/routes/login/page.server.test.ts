@@ -1,6 +1,6 @@
 import { describe, expect, it, vi } from 'vitest';
 import { actions } from './+page.server';
-import { SESSION_COOKIE_NAME } from '$lib/server/backend';
+import { SESSION_COOKIE_NAME } from '#lib/server/backend.ts';
 
 function makeEvent(form: Record<string, string>, fetchMock: ReturnType<typeof vi.fn>) {
 	const body = new FormData();
