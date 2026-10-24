@@ -11,9 +11,11 @@ included as optional folders you can delete.
 
 ![Login page](docs/screenshots/login.png)
 
-![Dashboard](docs/screenshots/dashboard.png)
+![Login with a rejected password](docs/screenshots/login-error.png)
 
-_These images are illustrative mockups rendered from this repository's documented screens and API shapes, not captures of a running build. Regenerate or replace them with real captures once the app is running._
+![Dashboard after signing in as a provisioned operator](docs/screenshots/dashboard.png)
+
+_Real captures from a local run (Go backend, SvelteKit dev server, PostgreSQL, an operator created with `provision-operator`), driven with Playwright. The "reconnecting..." indicator is the optional live-updates module, which was not proxied through Caddy in this run._
 
 ## What is included
 
