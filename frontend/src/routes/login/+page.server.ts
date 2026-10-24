@@ -5,7 +5,7 @@ import {
 	backendFetch,
 	parseSessionCookie,
 	SESSION_COOKIE_NAME
-} from '$lib/server/backend';
+} from '#lib/server/backend.ts';
 
 // If the browser already carries a session cookie, skip straight to the
 // dashboard. This is a UX shortcut only: the dashboard's own load function is

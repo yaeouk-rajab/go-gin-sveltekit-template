@@ -1,5 +1,5 @@
 import type { RequestHandler } from './$types';
-import { backendFetch, SESSION_COOKIE_NAME } from '$lib/server/backend';
+import { backendFetch, SESSION_COOKIE_NAME } from '#lib/server/backend.ts';
 
 // GET /events is the browser-facing half of the SSE proxy. The browser's
 // EventSource only talks to this frontend's own origin; this route re-attaches

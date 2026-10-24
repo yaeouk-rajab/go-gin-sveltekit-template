@@ -54,6 +54,13 @@ That is expected when `go.mod` is ahead of the local Go.
   `eslint-disable-next-line` with the reason on each link.
 - ESLint's `no-undef` is off on purpose; TypeScript checks names, and DOM types
   such as `KeyboardEvent` are not runtime globals to ESLint.
+- SvelteKit 3: config lives in `vite.config.ts` (`sveltekit({...})`, there is no `svelte.config.js`), the
+  `$lib` alias is gone in favour of `#lib/*` (package.json `imports`; write the file extension, e.g.
+  `#lib/server/backend.ts`), and env vars are declared in `src/env.ts` and read from `$app/env/private`.
+  Do not re-add a `cookie` override: kit 3 needs cookie 2.x and `parseCookie` is missing from 0.7, which
+  only fails at runtime in the built server.
+- Vitest runs two projects (`vite.config.ts`): component tests get `svelteTesting()` and its browser
+  export condition; server tests must not, or kit's `redirect()` reads `window.location`.
 - `npm run lint` also runs `prettier --check`. Run `npx prettier --write src`
   after hand-written files.
 - `@types/node` must match the Node version CI and the Dockerfile use (22).
