@@ -1,6 +1,6 @@
 import { describe, expect, it, vi } from 'vitest';
 import { load } from './+page.server';
-import { SESSION_COOKIE_NAME } from '$lib/server/backend';
+import { SESSION_COOKIE_NAME } from '#lib/server/backend.ts';
 
 function cookieJar(token: string | undefined) {
 	const store = new Map<string, string>();

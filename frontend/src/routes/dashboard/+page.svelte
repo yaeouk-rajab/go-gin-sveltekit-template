@@ -1,11 +1,11 @@
 <script lang="ts">
 	import type { PageProps } from './$types';
-	import Alert from '$lib/components/Alert.svelte';
-	import Button from '$lib/components/Button.svelte';
+	import Alert from '#lib/components/Alert.svelte';
+	import Button from '#lib/components/Button.svelte';
 	// Optional module: live updates over SSE. Delete the import, the
 	// <LiveIndicator /> element, and src/lib/optional/ plus
 	// src/routes/(optional-sse)/ to remove it.
-	import LiveIndicator from '$lib/optional/LiveIndicator.svelte';
+	import LiveIndicator from '#lib/optional/LiveIndicator.svelte';
 
 	let { data }: PageProps = $props();
 </script>
